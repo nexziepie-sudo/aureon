@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080808">
+
+    <title>AUREON | Digital Solutions & Live Markets</title>
+    <meta name="description" content="AUREON provides web development, AI voice agents, custom PC builds, iPhone and computer repair, and live cryptocurrency market information.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container navbar">
+        <a href="#home" class="logo">AUREON</a>
+
+        <nav class="desktop-nav" aria-label="Main navigation">
+            <a href="https://www.facebook.com/share/1CFY7ECipL/?mibextid=wwXIfr">Facebook</a>
+            <a href="https://www.instagram.com/aureon6202?mdxt=MTFpZjFlanZlcTQ3Zg==">Instagram</a>
+            <a href="https://s.shopee.ph/2BG0O1tO1M">Shopee</a>
+            <a href="#inquiry" class="nav-cta">Contact Us</a>
+        </nav>
+
+        <button class="menu-button" id="menuButton"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="menuPanel">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<div class="menu-overlay" id="menuOverlay"></div>
+
+<aside class="menu-panel" id="menuPanel" inert aria-hidden="true">
+    <button class="menu-close" id="menuClose" aria-label="Close menu">×</button>
+
+    <nav class="menu-links" aria-label="Mobile navigation">
+        <a href="https://www.facebook.com/share/1CFY7ECipL/?mibextid=wwXIfr">Facebook</a>
+        <a href="https://www.instagram.com/aureon6202?mdxt=MTFpZjFlanZlcTQ3Zg==">Instagram</a>
+        <a href="https://s.shopee.ph/2BG0O1tO1M">Shopee</a>
+        <a href="#inquiry">Contact Us</a>
+    </nav>
+
+</aside>
+
+<main>
+
+    <!-- HERO -->
+
+    <section class="hero" id="home">
+        <div class="container hero-content">
+
+            <h1>
+                Technology Meets<br>
+                <span>Digital Possibilities.</span>
+            </h1>
+
+            <p class="hero-description">
+                AUREON brings together business website development,
+                AI voice agents, custom computer builds, device repair,
+                and live cryptocurrency market information.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#services" class="btn btn-yellow">Explore Services →</a>
+                <a href="#markets" class="btn btn-outline">View Live Markets</a>
+            </div>
+
+            <div class="hero-bottom">
+            </div>
+        </div>
+    </section>
+
+    <!-- CRYPTO TICKER -->
+
+    <section class="ticker-section" aria-label="Live cryptocurrency ticker">
+        <div class="ticker-label">
+            <span class="status-dot"></span>
+            LIVE MARKETS
+        </div>
+
+        <div class="ticker-window">
+            <div class="ticker-track" id="tickerTrack">
+
+                <div class="ticker-item">
+                    <strong>BTC</strong>
+                    <span id="ticker-btc">Connecting...</span>
+                </div>
+                <div class="ticker-item">
+                    <strong>ETH</strong>
+                    <span id="ticker-eth">Connecting...</span>
+                </div>
+                <div class="ticker-item">
+                    <strong>BNB</strong>
+                    <span id="ticker-bnb">Connecting...</span>
+                </div>
+                <div class="ticker-item">
+                    <strong>SOL</strong>
+                    <span id="ticker-sol">Connecting...</span>
+                </div>
+                <div class="ticker-item">
+                    <strong>XRP</strong>
+                    <span id="ticker-xrp">Connecting...</span>
+                </div>
+                <div class="ticker-item">
+                    <strong>DOGE</strong>
+                    <span id="ticker-doge">Connecting...</span>
+                </div>
+
+                <!-- Duplicate items for seamless scrolling -->
+
+                <div class="ticker-item" aria-hidden="true">
+                    <strong>BTC</strong><span id="ticker-btc2">Connecting...</span>
+                </div>
+                <div class="ticker-item" aria-hidden="true">
+                    <strong>ETH</strong><span id="ticker-eth2">Connecting...</span>
+                </div>
+                <div class="ticker-item" aria-hidden="true">
+                    <strong>BNB</strong><span id="ticker-bnb2">Connecting...</span>
+                </div>
+                <div class="ticker-item" aria-hidden="true">
+                    <strong>SOL</strong><span id="ticker-sol2">Connecting...</span>
+                </div>
+                <div class="ticker-item" aria-hidden="true">
+                    <strong>XRP</strong><span id="ticker-xrp2">Connecting...</span>
+                </div>
+                <div class="ticker-item" aria-hidden="true">
+                    <strong>DOGE</strong><span id="ticker-doge2">Connecting...</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+
+    <section class="section services-section" id="services">
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="eyebrow">OUR SERVICES</span>
+                <h2>Solutions Built Around <span>You.</span></h2>
+                <p>
+                    Practical digital and technology services for
+                    businesses, creators, and individuals.
+                </p>
+            </div>
+
+            <div class="service-grid">
+
+                <article class="service-card">
+                    <h3>Web Development</h3>
+                    <p>
+                        Establish your online presence with a professional,
+                        responsive business website.
+                    </p>
+                    <ul>
+                        <li>Basic business websites</li>
+                        <li>Mobile-responsive design</li>
+                        <li>Contact and inquiry systems</li>
+                        <li>Website improvements</li>
+                    </ul>
+                    <a href="#inquiry" class="service-link"
+                       data-service="Web Development">Discuss your website →</a>
+                </article>
+
+                <article class="service-card">
+                    <h3>AI Voice Agents</h3>
+                    <p>
+                        Explore AI voice solutions for customer calls,
+                        inquiry collection, and appointment workflows.
+                    </p>
+                    <ul>
+                        <li>AI voice agent configuration</li>
+                        <li>Call handling workflows</li>
+                        <li>Appointment integrations</li>
+                        <li>Business process automation</li>
+                    </ul>
+                    <a href="#inquiry" class="service-link"
+                       data-service="AI Voice Agents">Explore AI solutions →</a>
+                </article>
+
+                <article class="service-card">
+                    <h3>Custom Computer Builds</h3>
+                    <p>
+                        Plan a computer setup tailored to your budget,
+                        gaming requirements, or professional workload.
+                    </p>
+                    <ul>
+                        <li>Custom PC planning and assembly</li>
+                        <li>Component compatibility</li>
+                        <li>Gaming and workstation builds</li>
+                        <li>Hardware upgrades</li>
+                    </ul>
+                    <a href="#inquiry" class="service-link"
+                       data-service="Custom Computer Builds">Plan your PC →</a>
+                </article>
+
+                <article class="service-card">
+                    <h3>iPhone & Computer Repair</h3>
+                    <p>
+                        Get assistance with device issues, component
+                        replacement, maintenance, and troubleshooting.
+                    </p>
+                    <ul>
+                        <li>iPhone repair inquiries</li>
+                        <li>Laptop and desktop diagnostics</li>
+                        <li>Hardware replacement</li>
+                        <li>Operating system troubleshooting</li>
+                    </ul>
+                    <a href="#inquiry" class="service-link"
+                       data-service="iPhone and Computer Repair">Request repair →</a>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- LIVE CRYPTO MARKETS -->
+
+    <section class="section markets-section" id="markets">
+        <div class="container">
+
+            <div class="market-heading">
+                <div class="section-heading market-heading-copy">
+                    <span class="eyebrow">DIGITAL ASSETS</span>
+                    <h2>Live <span>Crypto Markets.</span></h2>
+                </div>
+
+                <div class="connection-status" id="connectionStatus">
+                    <span class="status-dot" id="connectionDot"></span>
+                    <span id="connectionText">Connecting to market...</span>
+                </div>
+            </div>
+
+            <div class="market-grid">
+
+                <article class="coin-card">
+                    <div class="coin-top">
+                        <div class="coin-identity">
+                            <div class="coin-icon bitcoin">₿</div>
+                            <div><h3>Bitcoin</h3><span>BTC / USDT</span></div>
+                        </div>
+                        <span class="coin-badge">BTC</span>
+                    </div>
+                    <div class="coin-price" id="price-btc">Loading...</div>
+                    <div class="coin-change neutral" id="change-btc">Waiting for data</div>
+                    <div class="coin-divider"></div>
+                    <div class="coin-footer"><span>24H CHANGE</span><span>LIVE DATA</span></div>
+                </article>
+
+                <article class="coin-card">
+                    <div class="coin-top">
+                        <div class="coin-identity">
+                            <div class="coin-icon ethereum">Ξ</div>
+                            <div><h3>Ethereum</h3><span>ETH / USDT</span></div>
+                        </div>
+                        <span class="coin-badge">ETH</span>
+                    </div>
+                    <div class="coin-price" id="price-eth">Loading...</div>
+                    <div class="coin-change neutral" id="change-eth">Waiting for data</div>
+                    <div class="coin-divider"></div>
+                    <div class="coin-footer"><span>24H CHANGE</span><span>LIVE DATA</span></div>
+                </article>
+
+                <article class="coin-card">
+                    <div class="coin-top">
+                        <div class="coin-identity">
+                            <div class="coin-icon doge">Ð</div>
+                            <div><h3>Dogecoin</h3><span>DOGE / USDT</span></div>
+                        </div>
+                        <span class="coin-badge">DOGE</span>
+                    </div>
+                    <div class="coin-price" id="price-doge">Loading...</div>
+                    <div class="coin-change neutral" id="change-doge">Waiting for data</div>
+                    <div class="coin-divider"></div>
+                    <div class="coin-footer"><span>24H CHANGE</span><span>LIVE DATA</span></div>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- INQUIRY FORM -->
+
+    <section class="section inquiry-section" id="inquiry">
+        <div class="container inquiry-grid">
+
+            <div class="inquiry-intro">
+                <span class="eyebrow">CONTACT AUREON</span>
+                <h2>Let's Talk About Your <span>Project.</span></h2>
+                <p>
+                    Submit a basic inquiry about web development, AI voice
+                    agents, custom computer builds, or device repair.
+                    We will use the information to understand your request.
+                </p>
+
+                <div class="contact-note">
+                    <strong>Phone Number</strong>
+                    <p>09920530504</p>
+                </div>
+
+                <div class="contact-note">
+                    <strong>Email</strong>
+                    <p>aureon2026@gmail.com</p>
+                </div>
+
+                <div class="contact-note">
+                    <strong>Address</strong>
+                    <p>Fortune Towne, Bacolod City.</p>
+                </div>
+            </div>
+
+            <form class="inquiry-form" id="inquiryForm">
+                <h3>Service Inquiry</h3>
+                <p class="form-subtitle">Fields marked * are required.</p>
+
+                <div class="form-grid">
+
+                    <div class="form-field">
+                        <label for="name">Full Name *</label>
+                        <input id="name" name="name" type="text"
+                               maxlength="100" autocomplete="name"
+                               required placeholder="Your name">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email">Email Address *</label>
+                        <input id="email" name="email" type="email"
+                               maxlength="150" autocomplete="email"
+                               required placeholder="you@example.com">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="phone">Contact Number</label>
+                        <input id="phone" name="phone" type="tel"
+                               maxlength="30" autocomplete="tel"
+                               placeholder="Your phone number">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="service">Service Needed *</label>
+                        <select id="service" name="service" required>
+                            <option value="" disabled selected>Select a service</option>
+                            <option value="Web Development">Web Development</option>
+                            <option value="AI Voice Agents">AI Voice Agents</option>
+                            <option value="Custom Computer Builds">Custom Computer Builds</option>
+                            <option value="iPhone and Computer Repair">iPhone and Computer Repair</option>
+                            <option value="Other / General Inquiry">Other / General Inquiry</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="budget">Estimated Budget</label>
+                        <select id="budget" name="budget">
+                            <option value="">Prefer to discuss</option>
+                            <option>Under ₱1,000</option>
+                            <option>₱1,000 – ₱5,000</option>
+                            <option>₱5,001 – ₱15,000</option>
+                            <option>₱15,001 and above</option>
+                            
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="timeline">Preferred Timeline</label>
+                        <select id="timeline" name="timeline">
+                            <option value="">Not yet decided</option>
+                            <option>As soon as possible</option>
+                            <option>Within 1–2 weeks</option>
+                            <option>Within a month</option>
+                            <option>Planning for the future</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field full">
+                        <label for="message">Describe Your Request *</label>
+                        <textarea id="message" name="message"
+                                  maxlength="3000" required
+                                  placeholder="Tell us about your project, device issue, PC specifications, or AI workflow requirements."></textarea>
+                    </div>
+
+                </div>
+
+                <p class="privacy-note">
+                    Do not submit passwords, verification codes, payment
+                    information, or other sensitive details.
+                    See our <a href="privacy.html">Privacy Notice</a>.
+                </p>
+
+                <button type="submit" class="btn btn-yellow submit-button"
+                        id="submitButton">Submit Inquiry →</button>
+
+                <p class="form-status" id="formStatus"
+                   role="status" aria-live="polite"></p>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- CTA -->
+<footer>
+    <div class="container footer-content">
+
+        <small>© <span id="year"></span> AUREON. All Rights Reserved.</small>
+    </div>
+</footer>
+
+</body>
+</html>
